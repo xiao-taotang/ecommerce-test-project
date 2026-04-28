@@ -10,14 +10,15 @@
 - pytest-html（测试报告）
 
 ## 项目结构
-ecommerce-test-project/
-── conftest.py          # 公共fixture，浏览器启动与关闭
-── test_login.py        # 登录测试（成功登录、登录失败）
-── test_cart.py         # 购物车测试（加入商品、移除商品）
-── test_checkout.py     # 完整下单流程测试
-── pytest.ini           # pytest配置
-── requirements.txt     # 项目依赖
-── README.md
+
+| 文件 | 说明 |
+|------|------|
+| conftest.py | 公共fixture，浏览器启动与关闭 |
+| test_login.py | 登录测试（成功登录、登录失败） |
+| test_cart.py | 购物车测试（加入商品、移除商品） |
+| test_checkout.py | 完整下单流程测试 |
+| pytest.ini | pytest配置 |
+| requirements.txt | 项目依赖 |
 
 ## 测试场景
 
