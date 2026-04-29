@@ -1,11 +1,4 @@
-import pytest
-from selenium import webdriver
+import sys
+import os
 
-@pytest.fixture(scope="function")
-def driver():
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    driver.implicitly_wait(10)
-    driver.get("https://www.saucedemo.com")
-    yield driver
-    driver.quit()
+sys.path.insert(0, os.path.dirname(__file__))
