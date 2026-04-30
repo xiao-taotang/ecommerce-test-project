@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(scope="function")
 def driver():
     chrome_options = Options()
+    chrome_options.add_argument("--guest")
 
     # CI环境下使用无头模式
     if os.environ.get("CI"):
